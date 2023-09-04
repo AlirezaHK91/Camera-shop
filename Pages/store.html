@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Noto+Serif:wght@100&family=Orbitron&family=Patua+One&display=swap" rel="stylesheet">
+    <title>Products</title>
+</head>
+<body>
+
+    <!-- menu and logo -->
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="/images/logo.png" width="180px" alt="logo"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="signin.html">Sign in</a></li>
+                </ul>
+            </nav>
+            <img src="/images/manu.png" class="menu-icon" onclick="menuToggle()" alt="">
+            
+        </div>
+
+    </div>
+
+    <!-- products-->
+    <div class="store-container">
+      <div id="cart"></div>
+        <div>
+        <h2>Products</h2>
+          <div class="products">
+
+            <div class="product">
+              <img src="/images/fujipng.png" alt="">
+              <span>Fuji X-T5</span>
+              <span>$1500</span>
+              <h3>Product details</h3>
+              <p>Sensor: 24.2 megapixel <br>Exmor R CMOS full-frame sensor<br>
+                Image Processor: BIONZ X image processor<br>
+                Continuous Shooting: Up to 10 frames per second.</p>
+              <button class="add-to-cart" onclick="addToCart('Fuji X-T5', 1500)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+              <img src="/images/canonpng.png" alt="">
+              <span>Canon R5</span>
+              <span>$1500</span>
+              <h3>Product details</h3>
+                <p>Sensor: 24.2 megapixel <br>Exmor R CMOS full-frame sensor<br>
+                    Image Processor: BIONZ X image processor<br>
+                    Continuous Shooting: Up to 10 frames per second.</p>
+              <button class="add-to-cart" onclick="addToCart('Canon R5', 1500)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+              <img src="/images/sonypng.png" alt="">
+              <span>Sony a7 iii</span>
+              <span>$1600</span>
+              <h3>Product details</h3>
+                <p>Sensor: 24.2 megapixel <br>Exmor R CMOS full-frame sensor<br>
+                    Image Processor: BIONZ X image processor<br>
+                    Continuous Shooting: Up to 10 frames per second.</p>
+              <button class="add-to-cart" onclick="addToCart('Sony a7 iii', 1600)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+              <img src="/images/nikonpng.png" alt="">
+              <span>Nikon  z6</span>
+              <span>$1800</span>
+              <h3>Product details</h3>
+                <p>Sensor: 24.2 megapixel <br>Exmor R CMOS full-frame sensor<br>
+                    Image Processor: BIONZ X image processor<br>
+                    Continuous Shooting: Up to 10 frames per second.</p>
+              <button class="add-to-cart" onclick="addToCart('Nikon z6', 1800)">Add to Cart</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+        
+
+    <footer>
+            <p>&copy; 2023 Camera Snap Shot. All rights reserved.</p>
+    </footer>
+
+<script src="/script.js"></script>
+
+</body>
+</html>
