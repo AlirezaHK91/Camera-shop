@@ -47,7 +47,7 @@ Indicator.style.transform = "translateX(0px)";
 
 
 // retrieve the local data or create an empty object for cart list
-const cart = JSON.parse(localStorage.getItem("data"));
+const cart = JSON.parse(localStorage.getItem("data")) || [];
 const cartElement = document.getElementById('cart');
 getFromLocalStorage();
 
